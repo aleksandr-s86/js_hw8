@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //1
+        for (let i = 0; i <= 10; i++) {
+            if (i % 2 === 0) {
+                console.log(i + '- четное число');
+            }
+            else {
+                console.log(i + '- нечетное число');
+            }
+
+        }
+        //2
+        const arr = [1, 2, 3, 4, 5, 6, 7];
+        const array = arr.splice(3, 2);
+        console.log(arr)
+        //3
+        const mass = []
+        let summ = 0;
+        for (let i = 0; i < 5; i++) {
+            mass[i] = Math.floor(Math.random() * (9 - 0 + 1) + 0) 
+        }
+        console.log(mass);
+        for (let i = 0; i < mass.length;i++) {
+            const element = mass[i];
+            summ+=element; 
+            if (mass[i]===3) {
+                console.log('В массиве присутствует число 3');
+            } else {
+                console.log('Числа 3 в массиве нет');
+            }    
+        }
+        console.log(summ);
+        const min = Math.min(...mass);
+        console.log(min);
+       
+           
+            
+        
+        
+
+
+
+    </script>
+</body>
+
+</html>
